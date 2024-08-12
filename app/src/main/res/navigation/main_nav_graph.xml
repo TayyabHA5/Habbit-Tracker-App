@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/morningSelectionFragment">
+
+    <fragment
+        android:id="@+id/morningSelectionFragment"
+        android:name="com.example.habbittrackerapp.fragments.MorningSelectionFragment"
+        tools:layout="@layout/fragment_morning_selection"
+        android:label="MorningSelectionFragment" >
+        <action
+            android:id="@+id/action_morningSelectionFragment_to_nightSelectionFragment"
+            app:destination="@id/nightSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nightSelectionFragment"
+        android:name="com.example.habbittrackerapp.fragments.NightSelectionFragment"
+        tools:layout="@layout/fragment_night_selection"
+        android:label="NightSelectionFragment" >
+        <action
+            android:id="@+id/action_nightSelectionFragment_to_morningSelectionFragment"
+            app:destination="@id/morningSelectionFragment" />
+        <action
+            android:id="@+id/action_nightSelectionFragment_to_procrastinateFragment"
+            app:destination="@id/procrastinateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/procrastinateFragment"
+        android:name="com.example.habbittrackerapp.fragments.ProcrastinateFragment"
+        tools:layout="@layout/fragment_procrastinate"
+        android:label="ProcrastinateFragment" >
+        <action
+            android:id="@+id/action_procrastinateFragment_to_productiveFragment"
+            app:destination="@id/productiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productiveFragment"
+        android:name="com.example.habbittrackerapp.fragments.ProductiveFragment"
+        tools:layout="@layout/fragment_productive"
+        android:label="ProductiveFragment" >
+        <action
+            android:id="@+id/action_productiveFragment_to_chooseHabitFragment"
+            app:destination="@id/chooseHabitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseHabitFragment"
+        android:name="com.example.habbittrackerapp.fragments.ChooseHabitFragment"
+        tools:layout="@layout/fragment_choose_habit"
+        android:label="ChooseHabitFragment" >
+        <action
+            android:id="@+id/action_chooseHabitFragment_to_drinkingWaterFragment"
+            app:destination="@id/drinkingWaterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinkingWaterFragment"
+        android:name="com.example.habbittrackerapp.fragments.DrinkingWaterFragment"
+        tools:layout="@layout/fragment_drinking_water"
+        android:label="DrinkingWaterFragment" />
+</navigation>

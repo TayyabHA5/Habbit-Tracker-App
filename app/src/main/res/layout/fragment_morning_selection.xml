@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:background="#8E97FD"
+        android:layout_height="match_parent"
+        tools:context=".fragments.MorningSelectionFragment">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="290sp"
+            android:layout_height="82sp"
+            android:layout_marginTop="111dp"
+            android:fontFamily="@font/rubik"
+            android:text="Whats time do you  usually wake up?"
+            android:textAlignment="center"
+            android:textColor="#FFECCC "
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:background="@drawable/mbg"
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="294dp"
+                android:background="#3E4ACA"
+                android:layout_alignParentBottom="true">
+
+                <TimePicker
+                    android:id="@+id/timePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:timePickerMode="spinner"
+                    android:layout_centerHorizontal="true"
+                    android:theme="@style/CustomTimePickerTheme"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGetStarted"
+                android:layout_width="315dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:text="Get Started"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/white" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

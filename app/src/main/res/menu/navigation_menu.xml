@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Profile"
+        android:id="@+id/profile"/>
+    <item android:title="Today"
+        android:id="@+id/navToday"/>
+    <item android:title="Your States"
+        android:id="@+id/navYourStates"/>
+    <item android:title="Challenges"
+        android:id="@+id/navChallenge"/>
+    <item android:title="All habits"
+        android:id="@+id/navAllHabits"/>
+    <item android:title="Notification"
+        android:id="@+id/navNotifications"/>
+    <item android:title="Setting"
+        android:id="@+id/navSetting"/>
+    <item android:title="Try free"
+        android:id="@+id/navTryFree"/>
+</menu>

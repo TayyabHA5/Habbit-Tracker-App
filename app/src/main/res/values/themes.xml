@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HabbitTrackerApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:colorPrimary">#6200EE</item>
+    </style>
+
+    <!-- Main theme for the app -->
+    <style name="Theme.HabbitTrackerApp" parent="Base.Theme.HabbitTrackerApp" />
+
+    <!-- Custom theme for TimePicker -->
+    <style name="CustomTimePickerTheme" parent="Base.Theme.HabbitTrackerApp">
+        <!-- Selected text color -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <!-- Unselected text color -->
+        <item name="android:textColorSecondary">#BCBCBC</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>
