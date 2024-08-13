@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Profile"
-        android:id="@+id/profile"/>
+        android:id="@+id/profileFragment"/>
     <item android:title="Today"
-        android:id="@+id/navToday"/>
+        android:id="@+id/homeFragment2"/>
     <item android:title="Your States"
-        android:id="@+id/navYourStates"/>
+        android:id="@+id/yourStatsFragment"/>
     <item android:title="Challenges"
-        android:id="@+id/navChallenge"/>
+        android:id="@+id/challengeFragment"/>
     <item android:title="All habits"
-        android:id="@+id/navAllHabits"/>
+        android:id="@+id/allHabittsFragment"/>
     <item android:title="Notification"
-        android:id="@+id/navNotifications"/>
+        android:id="@+id/notificationFragment"/>
     <item android:title="Setting"
-        android:id="@+id/navSetting"/>
+        android:id="@+id/settingFragment"/>
     <item android:title="Try free"
-        android:id="@+id/navTryFree"/>
+        android:id="@+id/tryFreeFragment"/>
 </menu>

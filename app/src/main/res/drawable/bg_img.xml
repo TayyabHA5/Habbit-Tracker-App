@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/design_backgrounf"
+            android:scaleType="centerCrop" />
+    </item>
+    <!-- Optional: Add a color overlay for better text visibility -->
+    <item>
+        <color android:color="#80000000" /> <!-- Semi-transparent black -->
+    </item>
+</layer-list>

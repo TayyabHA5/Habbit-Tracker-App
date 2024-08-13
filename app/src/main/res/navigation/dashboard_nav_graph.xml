@@ -2,6 +2,60 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/dashboard_nav_graph">
+    android:id="@+id/dashboard_nav_graph"
+    app:startDestination="@id/homeFragment2">
 
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.habbittrackerapp.fragments.dashboardfragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_habitsDetailsFragment"
+            app:destination="@id/habitsDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allHabittsFragment"
+        android:name="com.example.habbittrackerapp.fragments.dashboardfragment.AllHabittsFragment"
+        android:label="fragment_all_habitts"
+        tools:layout="@layout/fragment_all_habitts" />
+    <fragment
+        android:id="@+id/challengeFragment"
+        android:name="com.example.habbittrackerapp.fragments.dashboardfragment.ChallengeFragment"
+        android:label="fragment_challenge"
+        tools:layout="@layout/fragment_challenge" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.habbittrackerapp.fragments.dashboardfragment.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.habbittrackerapp.fragments.dashboardfragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.habbittrackerapp.fragments.dashboardfragment.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/tryFreeFragment"
+        android:name="com.example.habbittrackerapp.fragments.dashboardfragment.tryFreeFragment"
+        android:label="fragment_try_free"
+        tools:layout="@layout/fragment_try_free" />
+    <fragment
+        android:id="@+id/yourStatsFragment"
+        android:name="com.example.habbittrackerapp.fragments.dashboardfragment.YourStatsFragment"
+        android:label="fragment_your_stats"
+        tools:layout="@layout/fragment_your_stats" />
+    <fragment
+        android:id="@+id/habitsDetailsFragment"
+        tools:layout="@layout/fragment_habits_details"
+        android:name="com.example.habbittrackerapp.fragments.dashboardfragment.HabitsDetailsFragment"
+        android:label="HabitsDetailsFragment" >
+        <action
+            android:id="@+id/action_habitsDetailsFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
 </navigation>
