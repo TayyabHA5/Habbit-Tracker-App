@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Challenges"
+            android:text="All habitts"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold"

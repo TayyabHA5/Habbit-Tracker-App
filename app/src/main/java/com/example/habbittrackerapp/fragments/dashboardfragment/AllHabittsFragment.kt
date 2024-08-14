@@ -5,10 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.habbittrackerapp.R
 import com.example.habbittrackerapp.adapters.AllHabitsAdapter
+import com.example.habbittrackerapp.adapters.ChallengeAdapter
 import com.example.habbittrackerapp.databinding.FragmentAllHabittsBinding
-import com.example.habbittrackerapp.models.ModelRvAllHabits
+import com.example.habbittrackerapp.models.ModelAllhabits
+import com.example.habbittrackerapp.models.ModelChallenge
 
 
 class AllHabittsFragment : Fragment() {
@@ -32,14 +36,15 @@ class AllHabittsFragment : Fragment() {
     }
 
     private fun inItRecyclerView() {
-        binding.rvAllHabits.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.VERTICAL,false)
+        binding.rvAllHabits.layoutManager = GridLayoutManager(requireContext(),2)
         val allHabitLists = listOf(
-            ModelRvAllHabits("Happy Morning Challenge", "7 Day challenge","join now"),
-            ModelRvAllHabits("Happy Morning Challenge", "7 Day challenge","join now"),
-            ModelRvAllHabits("Happy Morning Challenge", "7 Day challenge","join now"),
-            ModelRvAllHabits("Happy Morning Challenge", "7 Day challenge","join now"),
-            ModelRvAllHabits("Happy Morning Challenge", "7 Day challenge","join now"),
-            ModelRvAllHabits("Happy Morning Challenge", "7 Day challenge","join now")
+            ModelAllhabits(R.drawable.glass,"water drinking","75%"),
+            ModelAllhabits(R.drawable.glass,"water drinking","75%"),
+            ModelAllhabits(R.drawable.glass,"water drinking","75%"),
+            ModelAllhabits(R.drawable.glass,"water drinking","75%"),
+            ModelAllhabits(R.drawable.glass,"water drinking","75%"),
+            ModelAllhabits(R.drawable.glass,"water drinking","75%"),
+
         )
         adapter = AllHabitsAdapter(allHabitLists)
         binding.rvAllHabits.adapter = adapter

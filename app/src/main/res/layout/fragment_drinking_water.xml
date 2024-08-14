@@ -146,140 +146,113 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
+            android:layout_marginTop="10dp"
+            android:id="@+id/layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="16dp"
             android:weightSum="7"
-            app:layout_constraintTop_toBottomOf="@+id/textView6"
-            tools:layout_editor_absoluteX="16dp">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
 
-            <androidx.cardview.widget.CardView
+            <!-- Sunday -->
+            <TextView
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#7889DF"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="8dp">
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="S"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="S"
-                    android:textColor="@android:color/white" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
+            <!-- Monday -->
+            <TextView
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#7889DF"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="8dp">
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="M"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="M"
-                    android:textColor="@android:color/white" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
+            <!-- Tuesday -->
+            <TextView
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#7889DF"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="8dp">
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="T"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="T"
-                    android:textColor="@android:color/white" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
+            <!-- Wednesday -->
+            <TextView
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#7889DF"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="8dp">
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="W"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="W"
-                    android:textColor="@android:color/white" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
+            <!-- Thursday -->
+            <TextView
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#7889DF"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="8dp">
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="T"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="T"
-                    android:textColor="@android:color/white" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
+            <!-- Friday -->
+            <TextView
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#7889DF"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="8dp">
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="F"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="F"
-                    android:textColor="@android:color/white" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
+            <!-- Saturday -->
+            <TextView
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#7889DF"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="8dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="S"
-                    android:textColor="@android:color/white" />
-            </androidx.cardview.widget.CardView>
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="S"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnContinue"
+            android:id="@+id/btnStartChallenge"
             android:layout_width="315dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
@@ -287,9 +260,10 @@
             android:backgroundTint="@color/white"
             android:text="Continue"
             android:textColor="@color/black"
+            android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+            app:layout_constraintTop_toBottomOf="@+id/layout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
