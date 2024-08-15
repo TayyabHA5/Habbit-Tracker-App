@@ -30,7 +30,7 @@ class AllHabittsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentAllHabittsBinding.inflate(inflater,container,false)
-        // Inflate the layout for this fragment
+
         inItRecyclerView()
         return binding.root
     }
