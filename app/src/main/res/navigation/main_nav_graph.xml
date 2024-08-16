@@ -52,10 +52,18 @@
         <action
             android:id="@+id/action_chooseHabitFragment_to_drinkingWaterFragment"
             app:destination="@id/drinkingWaterFragment" />
+        <action
+            android:id="@+id/action_chooseHabitFragment_to_tryFreeFragment2"
+            app:destination="@id/tryFreeFragment2" />
     </fragment>
     <fragment
         android:id="@+id/drinkingWaterFragment"
         android:name="com.example.habbittrackerapp.fragments.DrinkingWaterFragment"
         tools:layout="@layout/fragment_drinking_water"
         android:label="DrinkingWaterFragment" />
+    <fragment
+        android:id="@+id/tryFreeFragment2"
+        android:name="com.example.habbittrackerapp.fragments.dashboardfragment.tryFreeFragment"
+        tools:layout="@layout/fragment_profile"
+        android:label="tryFreeFragment" />
 </navigation>

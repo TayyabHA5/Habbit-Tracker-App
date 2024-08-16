@@ -24,4 +24,7 @@ class TimeViewModel(application: Application) : AndroidViewModel(application) {
     fun getTimeById(id: Int): LiveData<ModelTime> {
         return repository.getTimeById(id)
     }
+    fun getAllTime() : LiveData<List<ModelTime>>{
+        return repository.getAllTime()
+    }
 }

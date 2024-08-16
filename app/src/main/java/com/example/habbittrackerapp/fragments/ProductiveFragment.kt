@@ -21,13 +21,23 @@ class ProductiveFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentProductiveBinding.inflate(inflater,container,false)
-        // Inflate the layout for this fragment
+        navigateToNextFragment()
+
+        return binding.root
+    }
+
+    private fun navigateToNextFragment() {
         binding.cardView1.setOnClickListener(){
             findNavController().navigate(R.id.action_productiveFragment_to_chooseHabitFragment)
         }
-        return binding.root
+        binding.cardView2.setOnClickListener(){
+            findNavController().navigate(R.id.action_productiveFragment_to_chooseHabitFragment)
+        }
+        binding.cardView3.setOnClickListener(){
+            findNavController().navigate(R.id.action_productiveFragment_to_chooseHabitFragment)
+        }
     }
 
 }

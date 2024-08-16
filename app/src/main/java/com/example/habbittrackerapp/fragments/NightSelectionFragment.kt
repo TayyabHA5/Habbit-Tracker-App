@@ -30,16 +30,22 @@ class NightSelectionFragment : Fragment() {
     ): View {
         binding = FragmentNightSelectionBinding.inflate(inflater,container,false)
         timeViewModel = ViewModelProvider(this).get(TimeViewModel::class)
+        insertTime()
+
+        return binding.root
+    }
+
+
+
+    private fun insertTime() {
         binding.timePicker.setOnTimeChangedListener(){_,hoursOfDay,minutesOfDay->
             selectedTIme = "$hoursOfDay : $minutesOfDay"
         }
-       binding.btnGetStarted.setOnClickListener(){
-
-           timeViewModel.insertTime(ModelTime(morningTime = "", eveningTime = selectedTIme))
-           Toast.makeText(requireContext(), "Evening Time saved $selectedTIme", Toast.LENGTH_SHORT).show()
-           findNavController().navigate(R.id.action_nightSelectionFragment_to_procrastinateFragment)
-       }
-        return binding.root
+        binding.btnGetStarted.setOnClickListener(){
+            timeViewModel.insertTime(ModelTime(morningTime = "", eveningTime = selectedTIme))
+            Toast.makeText(requireContext(), "Evening Time saved $selectedTIme", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_nightSelectionFragment_to_procrastinateFragment)
+        }
     }
 
 }

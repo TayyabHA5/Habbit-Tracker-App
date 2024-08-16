@@ -24,11 +24,23 @@ class ProcrastinateFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding =  FragmentProcrastinateBinding.inflate(inflater,container,false)
+        navigateToNextFragment()
         binding.cardView1.setOnClickListener(){
             findNavController().navigate(R.id.action_procrastinateFragment_to_productiveFragment)
         }
-        // Inflate the layout for this fragment
         return binding.root
+    }
+
+    private fun navigateToNextFragment() {
+        binding.cardView1.setOnClickListener(){
+            findNavController().navigate(R.id.action_procrastinateFragment_to_productiveFragment)
+        }
+        binding.cardView2.setOnClickListener(){
+            findNavController().navigate(R.id.action_procrastinateFragment_to_productiveFragment)
+        }
+        binding.cardView3.setOnClickListener(){
+            findNavController().navigate(R.id.action_procrastinateFragment_to_productiveFragment)
+        }
     }
 
 
