@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.habbittrackerapp.models.ModelTime
 
-@Database(entities = [ModelTime::class], version = 3, exportSchema = true)
+@Database(entities = [ModelTime::class], version = 2, exportSchema = true)
 abstract class AppDataBase : RoomDatabase() {
 
     abstract fun timeDAO(): TimeDAO

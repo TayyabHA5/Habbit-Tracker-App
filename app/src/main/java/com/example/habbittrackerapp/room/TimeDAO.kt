@@ -13,9 +13,7 @@ interface TimeDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertTime(modelTime: ModelTime)
 
-    @Query("SELECT * FROM chooseTime WHERE id = :id")
+    @Query("SELECT * FROM morningTime WHERE id = :id")
      fun getTimeById(id: Int): LiveData<ModelTime>
 
-     @Query("SELECT * FROM chooseTime")
-     fun getAllTimes() : LiveData<List<ModelTime>>
 }

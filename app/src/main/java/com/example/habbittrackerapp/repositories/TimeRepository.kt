@@ -13,7 +13,4 @@ class TimeRepository(val timeDAO: TimeDAO) {
     fun getTimeById(id : Int) : LiveData<ModelTime>{
         return timeDAO.getTimeById(id)
     }
-    fun getAllTime() : LiveData<List<ModelTime>>{
-        return timeDAO.getAllTimes()
-    }
 }

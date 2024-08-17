@@ -32,12 +32,12 @@ class MorningSelectionFragment : Fragment() {
         timeViewModel = ViewModelProvider(this).get(TimeViewModel::class.java)
 
         binding.timePicker.setOnTimeChangedListener { _, hourOfDay, minutes ->
-            selectedTime = "$hourOfDay : $minutes"
+           val selectedTime  = "$hourOfDay:$minutes"
 
             binding.btnGetStarted.setOnClickListener {
               val time = timeViewModel.insertTime(ModelTime(morningTime = selectedTime, eveningTime = null.toString()))
                 findNavController().navigate(R.id.action_morningSelectionFragment_to_nightSelectionFragment)
-                Toast.makeText(requireContext(), "Morning Time saved $selectedTime", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "$time", Toast.LENGTH_SHORT).show()
             }
         }
 
